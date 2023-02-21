@@ -49,7 +49,7 @@ os_config = [
     "PM_LOGGER",
     "PM_PERMIT",
     "REMOVE_BG_API",
-    "HELLBOT_SESSION",
+    "ALNUB_SESSION",
     "SESSION_2",
     "SESSION_3",
     "SESSION_4",
