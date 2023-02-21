@@ -13,7 +13,7 @@ class Development(Config):
     BOT_TOKEN = "Your value"  # Create a bot from @BotFather and paste the token here
     BOT_LIBRARY = "telethon"  # fill 'pyrogram' if you want pyrogram version of hellbot else leave it as it is.
     DATABASE_URL = "Your value"  # A postgresql database url from elephantsql
-    HELLBOT_SESSION = "Your value"  # telethon or pyrogram string according to BOT_LIBRARY
+    ALNUB_SESSION = "Your value"  # telethon or pyrogram string according to BOT_LIBRARY
     HANDLER = "."  # Custom Command Handler
     SUDO_HANDLER = "!"  # Custom Command Handler for sudo users.
 

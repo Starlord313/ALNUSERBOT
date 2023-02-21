@@ -3,11 +3,11 @@
 </h1>
 
 <p align="center">
-  <img src="https://te.legra.ph/file/fd0c3c2201447746fd1d0.jpg" alt="The-HellBot">
+  <img src="https://te.legra.ph/file/1a0daf48e7b9b704dab70.jpg" alt="The-ALNUB">
 </p>
 
 <h6 align="center">
-  <b>⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡</b>
+  <b>⚡ ʟɛɢɛռɖaʀʏ ᴀғ ALNUSERBOT ⚡</b>
 </h6>
 
 <h3 align="center">
@@ -19,7 +19,7 @@
 <details><summary><h1><b>Deploy Alternatives 🥷🏻</h1></b></summary>
 
   - 
-    [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/The-HellBot/Plugins-T&branch=master&name=hellbot-koyeb&run_command=bash+runkoyeb&env[APP_ID]&env[API_HASH]&env[BOT_TOKEN]&env[HELLBOT_SESSION]&env[DATABASE_URL])
+    [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/The-HellBot/Plugins-T&branch=master&name=hellbot-koyeb&run_command=bash+runkoyeb&env[APP_ID]&env[API_HASH]&env[BOT_TOKEN]&env[ALNUB_SESSION]&env[DATABASE_URL])
 
 </details>
 
@@ -92,7 +92,7 @@ CmdHelp("hii").add_command(
 
 ![](https://www.gnu.org/graphics/gplv3-or-later.png)
 
-<h4 align="center">Copyright (C) 2022 <a href="https://github.com/The-HellBot">The-HellBot</a></h4>
+<h4 align="center">Copyright (C) 2022 <a href="https://github.com/starlord313">The-ALNUB</a></h4>
 
 Project [HellBot](https://github.com/The-HellBot/HellBot) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -110,6 +110,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 - 💖 [Telethon](https://github.com/LonamiWebs/Telethon)
 - 💖 [Pyrogram](https://github.com/Pyrogram/Pyrogram)
-- 💖 Team Hellbot
+- 💖 Team ALNUB
 
 ------

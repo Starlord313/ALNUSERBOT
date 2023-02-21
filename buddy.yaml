@@ -32,7 +32,7 @@
     - key: "BOT_TOKEN"
       type: "VAR"
       encrypted: true
-    - key: "HELLBOT_SESSION"
+    - key: "ALNUB_SESSION"
       type: "VAR"
       encrypted: true
     - key: "DATABASE_URL"
