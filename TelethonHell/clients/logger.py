@@ -7,4 +7,4 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
 )
 
-LOGGER = logging.getLogger("HellBot")
+LOGGER = logging.getLogger("ALNUB")

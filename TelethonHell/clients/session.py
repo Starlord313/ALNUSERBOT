@@ -12,14 +12,14 @@ def validate_session(session):
         new_session = session[6:-5]
         return str(new_session)
     else:
-        print(f"HELLBOT SESSION - Wrong session string!")
+        print(f"ALNUB SESSION - Wrong session string!")
         sys.exit()
 
 
 if Config.HELLBOT_SESSION:
     session = StringSession(validate_session(Config.HELLBOT_SESSION))
 else:
-    session = "hellbot"
+    session = "ALNUB"
 
 try:
     Hell = TelegramClient(
@@ -31,7 +31,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    print(f"HELLBOT_SESSION - {e}")
+    print(f"ALNUB_SESSION - {e}")
     sys.exit()
 
 
@@ -92,7 +92,7 @@ else:
 
 
 HellBot = TelegramClient(
-    session="Hell-TBot",
+    session="aln-TBot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
     connection=ConnectionTcpAbridged,
