@@ -61,7 +61,7 @@ async def _(event):
         user, rank = await get_full_user(event)
     else:
         return await parse_error(hell, "Can be used in Group and PMs only.")
-    if ForGo10God == user:
+    if Alloffline0 == user:
         return await parse_error(hell, "Cant promote self.")
     if not rank:
         rank = "ǟɖʍɨռ"
@@ -140,7 +140,7 @@ async def _(event):
 @hell_cmd(pattern="gban(?:\s|$)([\s\S]*)")
 async def _(event):
     reason = ""
-    ForGo10God, _, hell_mention = await client_id(event)
+    Alloffline0, _, hell_mention = await client_id(event)
     hell = await eor(event, f"`Gban in action...`")
     reply = await event.get_reply_message()
     if event.reply_to_msg_id:
@@ -166,7 +166,7 @@ async def _(event):
         return await parse_error(hell, "No user mentioned.")
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
-    if userid == ForGo10God:
+    if userid == Alloffline0:
         return await eod(hell, "🥴 **It's simply not possible.**")
     if str(userid) in DEVLIST:
         return await eod(hell, "😑 **It's simply not possible.**")
@@ -413,7 +413,7 @@ async def gkick(event):
         return await parse_error(hell, "No user mentioned.")
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
-    if userid == ForGo10God:
+    if userid == Alloffline0:
         return await eod(hell, "**🥴 It's simply not possible.**")
     if str(userid) in DEVLIST:
         return await eod(hell, "**😪 It's simply not possible.**")

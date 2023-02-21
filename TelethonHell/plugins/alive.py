@@ -11,7 +11,7 @@ from TelethonHell.plugins import *
 # -------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-__**🔥🔥ɦɛʟʟɮօt ɨs օռʟɨռɛ🔥🔥**__
+__**🔥🔥ALNUB ɨs օռʟɨռɛ🔥🔥**__
 __**↼ Øwñêr ⇀**__ : 『 [{name}]({userid}) 』
 ╭──────────────
 ┣─ **» Telethon:** __{telethon_version}__
@@ -20,7 +20,7 @@ __**↼ Øwñêr ⇀**__ : 『 [{name}]({userid}) 』
 ┣─ **» Uptime:** __{uptime}__
 ┣─ **» Ping:** __{ping}__
 ╰──────────────
-__**»»» [[ †hê Hêllẞø† ]](https://t.me/its_hellbot) «««**__
+__**»»» [[ †hê Hêllẞø† ]](https://t.me/ALNUSERBOT) «««**__
 """
 
 msg = """{}\n
@@ -62,7 +62,7 @@ async def _(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://te.legra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+        PIC = "https://telegra.ph/file/2a7055b1cd787da82dd35.jpg"
     end = datetime.datetime.now()
     ping = (end - start).microseconds / 1000
     alive = alive_temp.format(
@@ -87,7 +87,7 @@ async def _(event):
 async def hell_a(event):
     userid, _, _ = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b>»» нєℓℓвσт ιѕ σиℓιиє ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b>»» ALNUB ιѕ σиℓιиє ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)

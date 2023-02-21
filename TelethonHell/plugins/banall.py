@@ -26,9 +26,9 @@ BANNED_RIGHTS = ChatBannedRights(
 
 @hell_cmd(pattern="kickall$", allow_sudo=False)
 async def _(event):
-    ForGo10God, _, _ = await client_id(event)
+    alloffline0, _, _ = await client_id(event)
     result = await event.client(
-        functions.channels.GetParticipantRequest(event.chat_id, ForGo10God)
+        functions.channels.GetParticipantRequest(event.chat_id, alloffline0)
     )
     if not result.participant.admin_rights.ban_users:
         return await parse_error(event, "Need ban rights to do this.")
@@ -58,9 +58,9 @@ async def _(event):
 
 @hell_cmd(pattern="banall$", allow_sudo=False)
 async def _(event):
-    ForGo10God, _, _ = await client_id(event)
+    alloffline0, _, _ = await client_id(event)
     result = await event.client(
-        functions.channels.GetParticipantRequest(event.chat_id, ForGo10God)
+        functions.channels.GetParticipantRequest(event.chat_id, alloffline0)
     )
     if not result.participant.admin_rights.ban_users:
         return await parse_error(event, "Need ban rights to do this.")
@@ -262,7 +262,7 @@ async def ban_user(event, chat_id, user_id, rights):
 async def block_all(event):
     if event.is_private:
         return
-    ForGo10God, _, _ = await client_id(event)
+    alloffline0, _, _ = await client_id(event)
     hell = await eor(event, "__Starting to block all members in this group ...__")
     failed = 0
     success = 0
@@ -281,7 +281,7 @@ async def block_all(event):
 async def block_contacts(event):
     if event.is_private:
         return
-    ForGo10God, _, _ = await client_id(event)
+    alloffline0, _, _ = await client_id(event)
     hell = await eor(event, "__Starting to block my contacts in this group ...__")
     failed = 0
     success = 0
@@ -304,7 +304,7 @@ async def block_contacts(event):
 async def block_noncontacts(event):
     if event.is_private:
         return
-    ForGo10God, _, _ = await client_id(event)
+    alloffline0, _, _ = await client_id(event)
     hell = await eor(event, "__Starting to block non contacts in this group ...__")
     failed = 0
     success = 0
@@ -327,7 +327,7 @@ async def block_noncontacts(event):
 async def ublock_all(event):
     if event.is_private:
         return
-    ForGo10God, _, _ = await client_id(event)
+    alloffline0, _, _ = await client_id(event)
     hell = await eor(event, "__Starting to unblock all users in this group ...__")
     failed = 0
     success = 0

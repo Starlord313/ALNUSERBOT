@@ -6,9 +6,9 @@ from TelethonHell.plugins import *
 
 
 msg = f"""
-**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**
-  •        [📑 Repo 📑](https://github.com/The-HellBot/HellBot)
-  •        [HellBot Network](https://t.me/hellbot_network)
+**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ALNUB ⚡**
+  •        [📑 Repo 📑](https://github.com/STARLORD313/ALNUSERBOT)
+  •        [ALNUB Network](https://t.me/ALNUSERBOT)
   •  ©️ {hell_channel} ™
 """
 
@@ -19,7 +19,7 @@ async def repo(event):
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "repo")
         await hell[0].click(event.chat_id)
-        if event.sender_id == ForGo10God:
+        if event.sender_id == alloffline0:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)

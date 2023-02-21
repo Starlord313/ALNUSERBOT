@@ -73,7 +73,7 @@ async def _(event):
             await event.client.send_file(
                 event.chat_id,
                 output,
-                caption="TAR By HellBot",
+                caption="TAR By ALNUB",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,

@@ -11,15 +11,15 @@ from TelethonHell.plugins import *
 @hell_cmd(pattern="echo$")
 async def echo(event):
     if event.reply_to_msg_id is not None:
-        ForGo10God, HELL_USER, hell_mention = await client_id(event)
+        Alloffline0, HELL_USER, hell_mention = await client_id(event)
         reply_msg = await event.get_reply_message()
         user_id = reply_msg.sender_id
         chat_id = event.chat_id
         if is_echo(user_id, chat_id):
-            if gvarstat(f"ECHO_{ForGo10God}") == "True":
+            if gvarstat(f"ECHO_{alloffline0}") == "True":
                 return await eod(event, "The user is already enabled with echo !")
         addecho(user_id, chat_id)
-        addgvar(f"ECHO_{ForGo10God}", "True")
+        addgvar(f"ECHO_{Alloffline0}", "True")
         await eor(event, "**Hello 👋**")
     else:
         await eod(event, "Reply to a User's message to echo his messages")
@@ -28,12 +28,12 @@ async def echo(event):
 @hell_cmd(pattern="rmecho$")
 async def echo(event):
     if event.reply_to_msg_id is not None:
-        ForGo10God, HELL_USER, hell_mention = await client_id(event)
+        Alloffline0, HELL_USER, hell_mention = await client_id(event)
         reply_msg = await event.get_reply_message()
         user_id = reply_msg.sender_id
         chat_id = event.chat_id
         if is_echo(user_id, chat_id):
-            if gvarstat(f"ECHO_{ForGo10God}") == "True":
+            if gvarstat(f"ECHO_{alloffline0}") == "True":
                 remove_echo(user_id, chat_id)
                 await eod(event, "Echo has been stopped for the user")
         else:

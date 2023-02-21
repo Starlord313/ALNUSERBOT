@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from pySmartDL import SmartDL
 from TelethonHell.plugins import *
 
-logo = "https://te.legra.ph/file/2c546060b20dfd7c1ff2d.jpg"
+logo = "https://te.legra.ph/file/1a0daf48e7b9b704dab70.jpg"
 
 
 @hell_cmd(pattern="imdb(?:\s|$)([\s\S]*)")

@@ -23,11 +23,11 @@ async def _(event):
     else:
         if event.reply_to_msg_id:
             reply_msg = await event.get_reply_message()
-            await reply_msg.forward_to(ForGo10God)
+            await reply_msg.forward_to(Alloffline0)
         elif event.pattern_match.group(1):
             user = f"#LOG | Chat ID: `{event.chat_id}`\n\n"
             textx = user + event.pattern_match.group(1)
-            await event.client.send_message(ForGo10God, textx)
+            await event.client.send_message(Alloffline0, textx)
         else:
             await parse_error(event, "Nothing given to save !")
             return
@@ -38,14 +38,14 @@ async def _(event):
 async def _(event):
     if Config.PM_LOGGER == 0:
         return
-    ForGo10God, _, _ = await client_id(event)
+    Alloffline0, _, _ = await client_id(event)
     sender = await event.get_sender()
     if not sender.bot:
         chat = await event.get_chat()
         if Config.PM_LOGGER:
             if is_nolog(str(chat.id)):
                 return
-            if chat.id != ForGo10God:
+            if chat.id != Alloffline0:
                 try:
                     await event.client.forward_messages(
                         Config.PM_LOGGER, event.message, silent=True

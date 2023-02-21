@@ -7,8 +7,8 @@ from TelethonHell.plugins import *
 
 @bot.on(events.ChatAction)
 async def _(event):
-    ForGo10God, _, _ = await client_id(event)
-    if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+    Alloffline0, _, _ = await client_id(event)
+    if not gvarstat(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}"):
         return
     cws = get_current_welcome(event.chat_id)
     if (
@@ -71,8 +71,8 @@ async def _(event):
 if H2:
     @H2.on(events.ChatAction)
     async def _(event):
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -135,8 +135,8 @@ if H2:
 if H3:
     @H3.on(events.ChatAction)
     async def _(event):
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -200,8 +200,8 @@ if H4:
 
     @H4.on(events.ChatAction)
     async def _(event):
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -264,8 +264,8 @@ if H4:
 if H5:
     @H5.on(events.ChatAction)
     async def _(event):
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}"):
             return
         cws = get_current_welcome(event.chat_id)
         if (
@@ -352,22 +352,22 @@ async def save_welcome(event):
         string = reply.text
     success = "`Welcome note {} for this chat.`"
     if add_welcome(event.chat_id, 0, string, msg_id) is True:
-        addgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}", "TRUE")
+        addgvar(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}", "TRUE")
         return await eor(event, success.format("saved"))
     rm_welcome(event.chat_id)
-    delgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}")
+    delgvar(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}")
     if add_welcome(event.chat_id, 0, string, msg_id) is True:
-        addgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}", "TRUE")
+        addgvar(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}", "TRUE")
         return await eor(event, success.format("updated"))
     await eod(event, "Error while setting welcome in this group")
 
 
 @hell_cmd(pattern="cleanwelcome$")
 async def del_welcome(event):
-    ForGo10God, _, _ = await client_id(event)
-    if gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+    Alloffline0, _, _ = await client_id(event)
+    if gvarstat(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}"):
         if rm_welcome(event.chat_id) is True:
-            delgvar(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}")
+            delgvar(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}")
             await eod(event, "Welcome Message deleted for this chat")
         else:
             await eod(event, "To delete a welcome note you need to save one first.")
@@ -377,8 +377,8 @@ async def del_welcome(event):
 
 @hell_cmd(pattern="showwelcome$")
 async def getwelcome(event):
-    ForGo10God, _, _ = await client_id(event)
-    if not gvarstat(f"WELCOME_{ForGo10God}_{str(event.chat_id)[1:]}"):
+    Alloffline0, _, _ = await client_id(event)
+    if not gvarstat(f"WELCOME_{Alloffline0}_{str(event.chat_id)[1:]}"):
         return await eod(event, "No welcome notes here!")
     cws = get_current_welcome(event.chat_id)
     if not cws:

@@ -74,10 +74,10 @@ async def canon(event):
     hell = event.text[9:]
     if hell == "":
         return await eor(event, "`Give anime name to search filler episodes.`")
-    nub = await eor(event, f"Searching Filler Episodes For `{hell}`")
+    nub = await eor(event, f"Searching Filler Episodes For `{ALN}`")
     hel_ = search_filler(hell)
     if hel_ == {}:
-        return await nub.edit(f"No filler found for `{hell}`")
+        return await nub.edit(f"No filler found for `{ALN}`")
     list_ = list(hel_.keys())
     if len(list_) == 1:
         result = parse_filler(hel_.get(list_[0]))
@@ -176,7 +176,7 @@ CmdHelp("anime").add_command(
 ).add_command(
     "character", "<character name>", "Searches for the given anime character and sends the details.", "character Mai Sakurajima"
 ).add_command(
-    "aniuser", "<anilist username>", "Searches for the Anilist Stats of the given user.", "aniuser meizhellboy"
+    "aniuser", "<anilist username>", "Searches for the Anilist Stats of the given user.", "aniuser meizOWNER"
 ).add_command(
     "airing", "<anime name>", "Searches for the airing info of given anime."
 ).add_command(

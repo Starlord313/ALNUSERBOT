@@ -34,7 +34,7 @@ async def variable(hell):
                     event,
                     f"This is a SQL based variable. Do `{hl}gvar {variable}` to get variable info.",
                 )
-            if variable in ("HELLBOT_SESSION", "BOT_TOKEN", "HEROKU_API_KEY", "INSTAGRAM_SESSION"):
+            if variable in ("ALNUB_SESSION", "BOT_TOKEN", "HEROKU_API_KEY", "INSTAGRAM_SESSION"):
                 if Config.ABUSE == "ON":
                     await event.client.send_file(hell.chat_id, cjb, caption=cap)
                     await event.delete()

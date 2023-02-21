@@ -182,14 +182,14 @@ async def watcher(event):
 @hell_cmd(pattern="mute(?:\s|$)([\s\S]*)")
 async def muth(event):
     x = await client_id(event)
-    ForGo10God = x[0]
+    alloffline0 = x[0]
     if event.is_private:
         hell = await eor(event, "**Enough of your bullshit  !!**")
         await event.get_reply_message()
         await event.client(GetFullUserRequest(event.chat_id))
         if is_muted(event.chat_id, event.chat_id):
             return await eod(hell, "User is already muted here 🥴")
-        if event.chat_id == ForGo10God:
+        if event.chat_id == alloffline0:
             return await parse_error(hell, "You can't mute yourself !")
         try:
             mute(event.chat_id, event.chat_id)
@@ -221,11 +221,11 @@ async def muth(event):
                 name = (await event.client.get_entity(userid)).first_name
         else:
             return await parse_error(hell, "I need an user to mute !!")
-        if userid == ForGo10God:
+        if userid == alloffline0:
             return await parse_error(hell, "You can't mute yourself !")
         if str(userid) in DEVLIST:
             return await parse_error(hell, "Cant mute my developers !")
-        if ForGo10God not in admin_:
+        if alloffline0 not in admin_:
             return await parse_error(hell, NO_PERM)
         if userid in admin_:
             if is_muted(userid, event.chat_id):
@@ -262,7 +262,7 @@ async def muth(event):
 @hell_cmd(pattern="unmute(?:\s|$)([\s\S]*)")
 async def nomuth(event):
     x = await client_id(event)
-    ForGo10God = x[0]
+    alloffline0 = x[0]
     hell = await eor(event, "`Unmuting ...`")
     if event.is_private:
         if not is_muted(event.chat_id, event.chat_id):
@@ -298,7 +298,7 @@ async def nomuth(event):
                 name = (await event.client.get_entity(userid)).first_name
         else:
             return await parse_error(hell, "I need a user to unmute!!")
-        if ForGo10God not in admin_:
+        if alloffline0 not in admin_:
             return await parse_error(hell, NO_PERM)
         if userid in admin_:
             if not is_muted(userid, event.chat_id):

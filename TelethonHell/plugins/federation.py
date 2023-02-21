@@ -77,7 +77,7 @@ async def _(event):
         try:
             first = await conv.send_message("/fedinfo " + lavde)
             response = await conv.get_response()
-            await hell.edit(response.text + "\n\n**ʟɛɢɛռɖaʀʏ_ᴀғ_ɦɛʟʟɮօt**")
+            await hell.edit(response.text + "\n\n**ʟᴇɢᴇɴᴅᴀʀʏ_ᴀғ_ᴀʟɴᴜsᴇʀʙᴏᴛ**")
             await event.client.delete_messages(conv.chat_id, [first.id, response.id])
         except YouBlockedUserError:
             await parse_error(hell, "__Unblock @MissRose_Bot and try again.__", False)

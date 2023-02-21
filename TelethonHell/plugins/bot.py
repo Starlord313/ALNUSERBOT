@@ -34,8 +34,8 @@ async def pong(event):
     else:
         PIC = None
     hell = await eor(event, "`·.·★ ℘ıŋɠ ★·.·´")
-    ForGo10God, HELL_USER, _ = await client_id(event)
-    hell_mention = f"<a href='tg://user?id={ForGo10God}'>{HELL_USER}</a>"
+    alloffline0, HELL_USER, _ = await client_id(event)
+    hell_mention = f"<a href='tg://user?id={alloffline0}'>{ALNUB_USER}</a>"
     uptime = await get_time((time.time() - StartTime))
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
@@ -69,7 +69,7 @@ async def is_limited(event):
 
 @hell_cmd(pattern="kickme$")
 async def leave(event):
-    hell = await eor(event, "😪 **KThnxBye** See u all in hell!!")
+    hell = await eor(event, "😪 **KThnxBye** See u all in heaven!!")
     time.sleep(1)
     if "-" in str(event.chat_id):
         await event.client(LeaveChannelRequest(event.chat_id))
@@ -150,7 +150,7 @@ async def _(event):
             return await parse_error(event, e)
     
     else:
-        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @ForGo10God Hey Hell!` \n~ `{hl}dm @ForGo10God <reply to a msg>`")
+        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @alloffline0 Hey !` \n~ `{hl}dm @alloffline0 <reply to a msg>`")
 
 
 @hell_cmd(pattern="chain$")

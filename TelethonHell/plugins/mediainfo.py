@@ -9,7 +9,7 @@ from TelethonHell.plugins import *
 async def mediainfo(event):
     HELL_MEDIA = None
     reply = await event.get_reply_message()
-    logo = "https://te.legra.ph/file/2c546060b20dfd7c1ff2d.jpg"
+    logo = "https://te.legra.ph/file/1a0daf48e7b9b704dab70.jpg"
     if not reply:
         return await parse_error(event, "No replied media file found.")
     if not reply.media:

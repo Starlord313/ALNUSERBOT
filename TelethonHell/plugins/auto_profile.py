@@ -20,7 +20,7 @@ async def _(event):
     while True:
         HB = time.strftime("%d-%m-%y")
         HE = time.strftime("%H:%M")
-        name = f"🕒{HE} ⚡{HELL_USER}⚡ 📅{HB}"
+        name = f"🕒{HE} ⚡{ALNUB_USER}⚡ 📅{HB}"
         LOGS.info(name)
         try:
             await event.client(functions.account.UpdateProfileRequest(first_name=name))

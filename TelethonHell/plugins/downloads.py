@@ -142,7 +142,7 @@ CmdHelp("downloads").add_command(
 ).add_command(
     "geta", "channel username", "Will download all media from channel into your bot server but there is limit of 3000 to prevent API limits."
 ).add_command(
-    "getc", "<limit> <channel username>", "Will download latest given number of media from channel into your bot server", "getc 10 @Its_HellBot"
+    "getc", "<limit> <channel username>", "Will download latest given number of media from channel into your bot server", "getc 10 @AlnUserBot"
 ).add_info(
     "File download to bot's server."
 ).add_warning(

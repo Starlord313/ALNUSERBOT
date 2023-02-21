@@ -183,7 +183,7 @@ CmdHelp("edits").add_command(
 ).add_command(
     "figlet", "text : type", "The types are slant, 3D, 5line, alpha, banner, doh, iso, letter, allig, dotm, bubble, bulb, digi"
 ).add_info(
-    "Bass Bakchodi hai ye."
+    "Bass Bakchodi hai ye hehe."
 ).add_warning(
     "✅ Harmless Module."
 ).add()

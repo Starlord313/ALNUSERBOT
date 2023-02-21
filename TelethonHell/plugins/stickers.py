@@ -41,8 +41,8 @@ async def kang(event):
     nick = f"@{user.username}" if user.username else HELL_USER
     name = user.username if user.username else ForGo10God
     custompack = gvarstat("STICKER_PACKNAME")
-    packname = f"HellBot_{name}_{Sticker.pack}"
-    packnick = f"{custompack}" if custompack else f"{nick}'s Hêllẞø† Vol.{Sticker.pack}"
+    packname = f"AlnUserBot_{name}_{Sticker.pack}"
+    packnick = f"{custompack}" if custompack else f"{nick}'s AlnUserBot Vol.{Sticker.pack}"
     is_sta = False
     is_ani = False
     is_vid = False
@@ -122,8 +122,8 @@ async def kang(event):
                         Sticker.pack += 1
                     except ValueError:
                         Sticker.pack = 1
-                    packname = f"HellBot_{name}_{Sticker.pack}"
-                    packnick = f"{custompack}" if custompack else f"{nick}'s Hêllẞø† Vol.{Sticker.pack}"
+                    packname = f"AlnUserBot_{name}_{Sticker.pack}"
+                    packnick = f"{custompack}" if custompack else f"{nick}'s AlnUserBot Vol.{Sticker.pack}"
                     await hell.edit(f"__**Switching pack due to insufficient space ...**__ \n__Pack:__ `{Sticker.pack}`")
                     await conv.send_message(packname)
                     resp = await conv.get_response()
@@ -229,7 +229,7 @@ async def kang(event):
         f"#KANG #STICKER \n\nA sticker has been kanged into the pack of {HELL_USER}. Click below to see the pack!",
         buttons=[
           [Button.url("View Pack", f"t.me/addstickers/{packname}")],
-          [Button.url(HELL_USER, f"tg://user?id={ForGo10God}")],
+          [Button.url(HELL_USER, f"tg://user?id={AllOffline0}")],
         ],
         parse_mode=None,
     )
@@ -255,7 +255,7 @@ async def _(event):
     if not reply:
         return await eod(hell, "`Reply to a stciker to kang that pack.`")
     if len(lists) == 1:
-        pname = f"{un}'s Hêllẞø† Pack"
+        pname = f"{un}'s AlnUserBot Pack"
     else:
         pname = lists[1].strip()
     if reply and reply.media and reply.media.document.mime_type == "image/webp":
@@ -286,7 +286,7 @@ async def _(event):
         try:
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id=ForGo10God,
+                    user_id=Alloffline0,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
@@ -299,7 +299,7 @@ async def _(event):
             pack = int(pack) + 1
             create_st = await tbot(
                 functions.stickers.CreateStickerSetRequest(
-                    user_id=ForGo10God,
+                    user_id=Alloffline0,
                     title=pname,
                     short_name=f"hell_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
@@ -311,7 +311,7 @@ async def _(event):
             f"#PKANG #STICKER \n\nA sticker pack has been kanged by {HELL_USER}. Click below to see the pack!",
             buttons=[
                 [Button.url("View Pack", f"t.me/addstickers/{create_st.set.short_name}")],
-                [Button.url(HELL_USER, f"tg://user?id={ForGo10God}")],
+                [Button.url(HELL_USER, f"tg://user?id={Alloffline0}")],
             ],
             parse_mode=None,
         )
@@ -430,7 +430,7 @@ async def sticklet(event):
         ((512 - width) / 2, (512 - height) / 2), sticktext, font=font, fill=(R, G, B)
     )
     image_stream = io.BytesIO()
-    image_stream.name = "Hellbot.webp"
+    image_stream.name = "AlnUb.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
     await event.client.send_message(

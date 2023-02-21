@@ -10,9 +10,9 @@ async def _(event):
         return await parse_error(event, "AutoPost Can Only Be Used For Channels & Groups.")
     hell = await eor(event, "Trying to start autoposting from here...")
     cid = await client_id(event)
-    ForGo10God = cid[0]
+    alloffline0 = cid[0]
     hel_ = event.text[10:]
-    cli_ = ForGo10God
+    cli_ = alloffline0
     checker = gvarstat(f"AUTOPOST_{str(cli_)}")
     if hel_ == "":
         return await eod(
@@ -44,9 +44,9 @@ async def _(event):
         return await parse_error(event, "AutoPost Can Only Be Used For Channels.")
     hell = await eor(event, "Removing autopost...")
     cid = await client_id(event)
-    ForGo10God = cid[0]
+    alloffline0 = cid[0]
     hel_ = event.text[12:]
-    cli_ = ForGo10God
+    cli_ = alloffline0
     checker = gvarstat(f"AUTOPOST_{str(cli_)}")
     if hel_ == "":
         return await eod(
@@ -79,8 +79,8 @@ async def _(event):
     if channels_set == []:
         return
     cid = await client_id(event)
-    ForGo10God = cid[0]
-    cli_ = ForGo10God
+    alloffline0 = cid[0]
+    cli_ = alloffline0
     checker = gvarstat(f"AUTOPOST_{str(cli_)}")
     if checker and checker == "True":
         for chat in channels_set:

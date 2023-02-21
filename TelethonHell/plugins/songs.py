@@ -13,7 +13,7 @@ from TelethonHell.plugins import *
 
 @hell_cmd(pattern="song(?:\s|$)([\s\S]*)")
 async def songs(event):
-    ForGo10God, _, hell_mention = await client_id(event)
+    Alloffline0, _, hell_mention = await client_id(event)
     lists = event.text.split(" ", 1)
     if len(lists) != 2:
         return await parse_error(event, "Nothing given to search.")
@@ -30,7 +30,7 @@ async def songs(event):
         channel = song_dict[1]['channel']
         duration = song_dict[1]['duration']
         thumbnail = song_dict[1]['thumbnail']
-        thumb_name = f'thumb{ForGo10God}.jpg'
+        thumb_name = f'thumb{Alloffline0}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
     except Exception as e:
@@ -87,7 +87,7 @@ async def vsong(event):
         channel = song_dict[1]['channel']
         duration = song_dict[1]['duration']
         thumbnail = song_dict[1]['thumbnail']
-        thumb_name = f'thumb{ForGo10God}.jpg'
+        thumb_name = f'thumb{Alloffline0}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
     except Exception as e:
@@ -145,7 +145,7 @@ async def lyrics(event):
         lyrics = result['lyrics']
         final = f"<b><i>• Song:</b></i> <code>{title}</code> \n<b><i>• Lyrics:</b></i> \n<code>{lyrics}</code>"
         if len(final) >= 4095:
-            to_paste = f"<img src='{image}'/> \n{final} \n<img src='https://te.legra.ph/file/2c546060b20dfd7c1ff2d.jpg'/>"
+            to_paste = f"<img src='{image}'/> \n{final} \n<img src='https://te.legra.ph/file/1a0daf48e7b9b704dab70.jpg'/>"
             link = await telegraph_paste(title, to_paste)
             await hell.edit(f"**Lyrics too big! Get it from here:** \n\n• [{title}]({link})", link_preview=False)
         else:

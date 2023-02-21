@@ -16,13 +16,13 @@ async def restart(event):
         app = Heroku.apps()[Config.HEROKU_APP_NAME]
         app.restart()
     else:
-        await eor(event, f"✅ **Restarted Hêllẞø†** \n**Type** `{hl}ping` **after 1 minute to check if I am working !**")
+        await eor(event, f"✅ **Restarted AlnUserBot** \n**Type** `{hl}ping` **after 1 minute to check if I am working !**")
         await event.client.disconnect()
 
 
 @hell_cmd(pattern="restart$")
 async def re(hell):
-    event = await eor(hell, "Restarting Hêllẞø† ...")
+    event = await eor(hell, "Restarting AlnUserBot ...")
     try:
         await restart(event)
     except CancelledError:
@@ -33,7 +33,7 @@ async def re(hell):
 
 @hell_cmd(pattern="reload$")
 async def rel(event):
-    await eor(event, "**Reloaded HellBot!** \n\n__This might take a minute.__")
+    await eor(event, "**Reloaded AlnUserBot!** \n\n__This might take a minute.__")
     await reload_hellbot()
 
 
@@ -113,9 +113,9 @@ CmdHelp("power").add_command(
 ).add_command(
     "reload", None, "Reloads the bot DB and SQL variables without deleting any external plugins if installed."
 ).add_command(
-    "shutdown", None, "Turns off Hêllẞø†. Userbot will stop working unless you manually turn it on."
+    "shutdown", None, "Turns off AlnUb. Userbot will stop working unless you manually turn it on."
 ).add_command(
-    "svar", "<variable name> <variable value>", "Sets the variable to SQL variables without restarting the bot.", "svar ALIVE_PIC https://telegra.ph/file/57bfe195c88c5c127a653.jpg"
+    "svar", "<variable name> <variable value>", "Sets the variable to SQL variables without restarting the bot.", "svar ALIVE_PIC https://te.legra.ph/file/1a0daf48e7b9b704dab70.jpg"
 ).add_command(
     "gvar", "<variable name>", "Gets the info of mentioned variable from both SQL & OS.", "gvar ALIVE_PIC"
 ).add_command(

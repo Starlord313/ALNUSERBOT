@@ -71,7 +71,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
     async def _(event):
         if not event.is_private:
             return
-        ForGo10God, _, _ = await client_id(event)
+        Alloffline0, _, _ = await client_id(event)
         sender = await event.client(GetFullUserRequest(await event.get_input_chat()))
         if str(event.chat_id) == str(ForGo10God):
             return
@@ -86,7 +86,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                 pm_sql.approve(event.chat_id, "outgoing")
                 x = await event.client.send_message(
                     event.chat_id,
-                    "**Auto Approved because outgoing message.**",
+                    "**Auto Approved because outgoing message🕊️.**",
                 )
                 await asyncio.sleep(5)
                 await x.delete()
@@ -157,12 +157,12 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
     async def new_pm(event):
         if not event.is_private:
             return
-        ForGo10God, _, hell_mention = await client_id(event)
+        Alloffline0, _, hell_mention = await client_id(event)
         CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-        HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+        HELL_FIRST = f"🔥 𝘼𝙡𝙣𝙐𝙨𝙚𝙧𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
         if CSTM_PMP:
              HELL_FIRST += f"\n\n{CSTM_PMP}"
-        if event.sender_id == ForGo10God:
+        if event.sender_id == Alloffline0:
             return
         if str(event.sender_id) in DEVLIST:
             return
@@ -170,7 +170,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
         if HELL_FIRST == message_text:
             return
         sender = await event.client.get_entity(await event.get_input_chat())
-        if str(event.chat_id) == str(ForGo10God):
+        if str(event.chat_id) == str(Alloffline0):
             return
         if sender.bot:
             return
@@ -189,9 +189,9 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
         async def _(event):
             if not event.is_private:
                 return
-            ForGo10God, _, _ = await client_id(event)
+            Alloffline0, _, _ = await client_id(event)
             sender = await event.client(GetFullUserRequest(await event.get_input_chat()))
-            if str(event.chat_id) == str(ForGo10God):
+            if str(event.chat_id) == str(Alloffline0):
                 return
             if sender.user.bot:
                 return
@@ -204,7 +204,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                     pm_sql.approve(event.chat_id, "outgoing")
                     x = await event.client.send_message(
                         event.chat_id,
-                        "**Auto Approved because outgoing message.**",
+                        "**Auto Approved because outgoing message🕊️.**",
                     )
                     await asyncio.sleep(5)
                     await x.delete()
@@ -276,10 +276,10 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                 return
             ForGo10God, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 𝘼𝙡𝙣𝙐𝙨𝙚𝙧𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
-            if event.sender_id == ForGo10God:
+            if event.sender_id == Alloffline0:
                 return
             if str(event.sender_id) in DEVLIST:
                 return
@@ -306,7 +306,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
         async def _(event):
             if not event.is_private:
                 return
-            ForGo10God, _, _ = await client_id(event)
+            Alloffline0, _, _ = await client_id(event)
             sender = await event.client(GetFullUserRequest(await event.get_input_chat()))
             if str(event.chat_id) == str(ForGo10God):
                 return
@@ -321,7 +321,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                     pm_sql.approve(event.chat_id, "outgoing")
                     x = await event.client.send_message(
                         event.chat_id,
-                        "**Auto Approved because outgoing message.**",
+                        "**Auto Approved because outgoing message🕊️.**",
                     )
                     await asyncio.sleep(5)
                     await x.delete()
@@ -391,12 +391,12 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
         async def new_pm(event):
             if not event.is_private:
                 return
-            ForGo10God, _, hell_mention = await client_id(event)
+            Alloffline0, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 𝘼𝙡𝙣𝙐𝙨𝙚𝙧𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
-            if event.sender_id == ForGo10God:
+            if event.sender_id == Alloffline0:
                 return
             if str(event.sender_id) in DEVLIST:
                 return
@@ -404,7 +404,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
             if HELL_FIRST == message_text:
                 return
             sender = await event.client.get_entity(await event.get_input_chat())
-            if str(event.chat_id) == str(ForGo10God):
+            if str(event.chat_id) == str(Alloffline0):
                 return
             if sender.bot:
                 return
@@ -423,9 +423,9 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
         async def _(event):
             if not event.is_private:
                 return
-            ForGo10God, _, _ = await client_id(event)
+            Alloffline0, _, _ = await client_id(event)
             sender = await event.client(GetFullUserRequest(await event.get_input_chat()))
-            if str(event.chat_id) == str(ForGo10God):
+            if str(event.chat_id) == str(Alloffline0):
                 return
             if sender.user.bot:
                 return
@@ -438,7 +438,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                     pm_sql.approve(event.chat_id, "outgoing")
                     x = await event.client.send_message(
                         event.chat_id,
-                        "**Auto Approved because outgoing message.**",
+                        "**Auto Approved because outgoing message🕊️.**",
                     )
                     await asyncio.sleep(5)
                     await x.delete()
@@ -510,10 +510,10 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                 return
             ForGo10God, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 𝘼𝙡𝙣𝙐𝙨𝙚𝙧𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
-            if event.sender_id == ForGo10God:
+            if event.sender_id == Alloffline0:
                 return
             if str(event.sender_id) in DEVLIST:
                 return
@@ -521,7 +521,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
             if HELL_FIRST == message_text:
                 return
             sender = await event.client.get_entity(await event.get_input_chat())
-            if str(event.chat_id) == str(ForGo10God):
+            if str(event.chat_id) == str(Alloffline0):
                 return
             if sender.bot:
                 return
@@ -540,9 +540,9 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
         async def _(event):
             if not event.is_private:
                 return
-            ForGo10God, _, _ = await client_id(event)
+            Alloffline0, _, _ = await client_id(event)
             sender = await event.client(GetFullUserRequest(await event.get_input_chat()))
-            if str(event.chat_id) == str(ForGo10God):
+            if str(event.chat_id) == str(Alloffline0):
                 return
             if sender.user.bot:
                 return
@@ -555,7 +555,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                     pm_sql.approve(event.chat_id, "outgoing")
                     x = await event.client.send_message(
                         event.chat_id,
-                        "**Auto Approved because outgoing message.**",
+                        "**Auto Approved because outgoing message🕊️.**",
                     )
                     await asyncio.sleep(5)
                     await x.delete()
@@ -625,12 +625,12 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
         async def new_pm(event):
             if not event.is_private:
                 return
-            ForGo10God, _, hell_mention = await client_id(event)
+            Alloffline0, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 𝘼𝙡𝙣𝙐𝙨𝙚𝙧𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
-            if event.sender_id == ForGo10God:
+            if event.sender_id == Alloffline0:
                 return
             if str(event.sender_id) in DEVLIST:
                 return
@@ -714,8 +714,8 @@ if str(Config.INSTANT_BLOCK).lower() in enabled_list:
     @hell_handler(incoming=True)
     async def instant(event):
         sender = await event.client.get_entity(event.chat_id)
-        ForGo10God, _, _ = await client_id(event)
-        if event.chat_id == ForGo10God:
+        Alloffline0, _, _ = await client_id(event)
+        if event.chat_id == Alloffline0:
             return
         if str(event.chat_id) in DEVLIST:
             return

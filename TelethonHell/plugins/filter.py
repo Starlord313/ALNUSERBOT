@@ -27,8 +27,8 @@ TYPE_DOCUMENT = 2
 async def on_snip(event):
     name = event.raw_text
     _id = event.chat_id
-    ForGo10God, _, _ = await client_id(event)
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    Alloffline0, _, _ = await client_id(event)
+    if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
         return
     snips = get_all_filters(_id)
     if _id in filter1.last_triggered_filters:
@@ -68,8 +68,8 @@ if H2:
     async def on_snip(event):
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in filter2.last_triggered_filters:
@@ -109,8 +109,8 @@ if H3:
     async def on_snip(event):
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in filter3.last_triggered_filters:
@@ -150,8 +150,8 @@ if H4:
     async def on_snip(event):
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in filter4.last_triggered_filters:
@@ -191,8 +191,8 @@ if H5:
     async def on_snip(event):
         name = event.raw_text
         _id = event.chat_id
-        ForGo10God, _, _ = await client_id(event)
-        if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+        Alloffline0, _, _ = await client_id(event)
+        if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
             return
         snips = get_all_filters(_id)
         if _id in filter5.last_triggered_filters:
@@ -256,7 +256,7 @@ async def on_snip_save(event):
             snip.get("hash"),
             snip.get("fr"),
         )
-        addgvar(f"FILTER_{ForGo10God}_{str(_id)[1:]}", "TRUE")
+        addgvar(f"FILTER_{Alloffline0}_{str(_id)[1:]}", "TRUE")
         await eod(
             event,
             f"**Filter Saved!** \n\n__• Client:__ {hell_mention} \n__• Keyword:__ {name}",
@@ -271,7 +271,7 @@ async def on_snip_save(event):
 async def on_snip_list(event):
     ForGo10God, _, _ = await client_id(event)
     _id = event.chat_id
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
         return await eod(event, f"No filters. Start saving using `{hl}filter`")
     all_snips = get_all_filters(_id)
     OUT_STR = "**Available Filters in the Current Chat :** \n"
@@ -301,7 +301,7 @@ async def on_snip_delete(event):
     name = event.pattern_match.group(1)
     ForGo10God, _, hell_mention = await client_id(event)
     _id = event.chat_id
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
         return await eod(event, "There aren't any filter in chat!")
     try:
         remove_filter(_id, name)
@@ -317,10 +317,10 @@ async def on_snip_delete(event):
 async def on_all_snip_delete(event):
     ForGo10God, _, _ = await client_id(event)
     _id = event.chat_id
-    if not gvarstat(f"FILTER_{ForGo10God}_{str(_id)[1:]}"):
+    if not gvarstat(f"FILTER_{Alloffline0}_{str(_id)[1:]}"):
         return await eod(event, "No filters in this chat!")
     try:
-        delgvar(f"FILTER_{ForGo10God}_{str(_id)[1:]}")
+        delgvar(f"FILTER_{Alloffline0}_{str(_id)[1:]}")
         remove_all_filters(_id)
         await eod(event, f"**All the Filters in current chat deleted successfully**")
     except Exception as e:
