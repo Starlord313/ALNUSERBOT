@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>†hê Hêllẞø† 🇮🇳</b>
+  <b>†hê ALNUB 🇮🇳</b>
 </h1>
 
 <p align="center">
@@ -26,7 +26,7 @@
 -----
 
 <h1 align="center">
-  <b>Follow this format to make your own plugin for HellBot</b>
+  <b>Follow this format to make your own plugin for ALNUB</b>
 </h1>
 
 ```python3
