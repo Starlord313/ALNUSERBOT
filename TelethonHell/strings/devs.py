@@ -15,7 +15,7 @@ HARMFUL = [
     "sys.stderr",
     "subprocess",
     "session.save()",
-    "HELLBOT_SESSION",
+    "ALNUB_SESSION",
     "INSTAGRAM_SESSION",
     "DATABASE_URL",
     "BOT_TOKEN",
@@ -24,4 +24,4 @@ HARMFUL = [
     "HEROKU_API_KEY",
 ]
 
-INVALID_UPLOAD = ["Hell-TBot.session-journal", "Hell-TBot.session", "insta/settings.json"]
+INVALID_UPLOAD = ["ALN-TBot.session-journal", "ALM-TBot.session", "insta/settings.json"]
