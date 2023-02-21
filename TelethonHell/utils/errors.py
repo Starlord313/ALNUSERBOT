@@ -15,9 +15,9 @@ def errors_handler(func):
             date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
             new = {"error": str(sys.exc_info()[1]), "date": datetime.datetime.now()}
 
-            text = "**Hêllẞø† CRASH REPORT**\n\n"
+            text = "**ALNUB CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/ForGo10God)"
+            link = "[here](https://t.me/ALLOFFLINE0)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -28,7 +28,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN HELLBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN ALNUB TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
@@ -38,7 +38,7 @@ def errors_handler(func):
             ftext += str(traceback.format_exc())
             ftext += "\n\nError text:\n"
             ftext += str(sys.exc_info()[1])
-            ftext += "\n\n--------END HELLBOT TRACEBACK LOG--------"
+            ftext += "\n\n--------END ALNUB TRACEBACK LOG--------"
 
             command = 'git log --pretty=format:"%an: %s" -5'
 

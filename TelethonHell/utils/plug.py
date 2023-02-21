@@ -28,7 +28,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("HellBot - Successfully imported " + shortname)
+        LOGS.info("ALNUB - Successfully imported " + shortname)
     else:
         import TelethonHell.utils
 
@@ -67,7 +67,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["TelethonHell.plugins." + shortname] = mod
-        LOGS.info("⚡ Hêllẞø† ⚡ - Successfully Imported " + shortname)
+        LOGS.info("⚡ ALNUSERBOT ⚡ - Successfully Imported " + shortname)
 
 
 # remove plugins
@@ -91,8 +91,8 @@ def remove_plugin(shortname):
 
 async def plug_channel(client, channel):
     if channel != 0:
-        LOGS.info("⚡ Hêllẞø† ⚡ - PLUGIN CHANNEL DETECTED.")
-        LOGS.info("⚡ Hêllẞø† ⚡ - Starting to load extra plugins.")
+        LOGS.info("⚡ ALNUSERBOT ⚡ - PLUGIN CHANNEL DETECTED.")
+        LOGS.info("⚡ ALNUSERBOT ⚡ - Starting to load extra plugins.")
         plugs = await client.get_messages(channel, None, filter=InputMessagesFilterDocument)
         total = int(plugs.total)
         for plugins in range(total):
