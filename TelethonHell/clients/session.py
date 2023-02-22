@@ -17,9 +17,6 @@ try:
         auto_reconnect=True,
         connection_retries=None,
     )
-except Exception as e:
-    print(f"ALNUB_SESSION - {e}")
-    sys.exit()
 
 
 if Config.SESSION_2:
