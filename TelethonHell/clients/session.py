@@ -6,18 +6,30 @@ from telethon.sessions import StringSession
 
 from HellConfig import Config
 
+if Config.ALNUB_SESSION:
+
+    session = StringSession(validate_session(Config.ALNUB_SESSION))
+
+else:
+
     session = "ALNUB"
 
 try:
+
     Hell = TelegramClient(
+
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
         connection=ConnectionTcpAbridged,
         auto_reconnect=True,
         connection_retries=None,
+
     )
 
+except Exception as e:
+    print(f"ALNUB_SESSION - {e}")
+    sys.exit()
 
 if Config.SESSION_2:
     session2 = StringSession(validate_session(Config.SESSION_2))
