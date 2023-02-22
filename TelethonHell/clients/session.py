@@ -6,6 +6,13 @@ from telethon.sessions import StringSession
 
 from HellConfig import Config
 
+def validate_session(session):
+    if "==hell" and "bot==" in session.lower():
+        new_session = session[6:-5]
+        return str(new_session)
+    else:
+        print(f"ALNUB SESSION - Wrong session string!")
+        sys.exit()
 if Config.ALNUB_SESSION:
 
     session = StringSession(validate_session(Config.ALNUB_SESSION))
