@@ -6,10 +6,6 @@ from telethon.sessions import StringSession
 
 from HellConfig import Config
 
-
-if Config.ALNUB_SESSION:
-    session = StringSession(validate_session(Config.ALNUB_SESSION))
-else:
     session = "ALNUB"
 
 try:
