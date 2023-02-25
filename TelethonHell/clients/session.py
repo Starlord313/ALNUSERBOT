@@ -12,20 +12,16 @@ else:
     session = "alnub"
 
 try:
-
     Hell = TelegramClient(
-
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
         connection=ConnectionTcpAbridged,
         auto_reconnect=True,
         connection_retries=None,
-
     )
-
 except Exception as e:
-    print(f"ALNUB_SESSION - {e}")
+    print(f"STRING_SESSION - {e}")
     sys.exit()
 
 if Config.SESSION_2:
