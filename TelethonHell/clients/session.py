@@ -6,11 +6,19 @@ from telethon.sessions import StringSession
 
 from HellConfig import Config
 
-if Config.STRING_SESSION:
-    session = StringSession(str(Config.STRING_SESSION))
+def validate_session(session):
+
+    if "==hell" and "bot==" in session.lower():
+        new_session = session[6:-5]
+        return str(new_session)
+    else:
+        print(f"ALNUB SESSION - Wrong session string!")
+        sys.exit()
+
+if Config.ALNUB_SESSION:
+    session = StringSession(validate_session(Config.ALNUB_SESSION))
 else:
     session = "alnub"
-
 try:
     Hell = TelegramClient(
         session=session,
@@ -19,9 +27,11 @@ try:
         connection=ConnectionTcpAbridged,
         auto_reconnect=True,
         connection_retries=None,
+
     )
+
 except Exception as e:
-    print(f"STRING_SESSION - {e}")
+    print(f"ALNUB_SESSION - {e}")
     sys.exit()
 
 if Config.SESSION_2:
